@@ -1,10 +1,10 @@
 <?php
 
-function loadInput(string $fullPath): array
+function loadInput(string $filename): array
 {
-    if (! file_exists($fullPath)) {
-        die ("Input file not found: '$fullPath'.\n");
+    if (! file_exists($filename)) {
+        die ("Input file '$filename' not found in '" . __DIR__ ."'\n");
     }
 
-    return file($fullPath);
+    return file($filename);
 }

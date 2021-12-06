@@ -2,20 +2,20 @@
 
 // https://adventofcode.com/2021/day/3
 
-require '../utils.inc.php';
+require __DIR__ . '/../utils.inc.php';
 
 if ($argc < 2) {
     echo "Error:The data input filename is the required argument.\n";
     echo "Usage:
     php solution_part1.php <input_filename>
     \n";
-    die(0);
+    die();
 }
 
-$input = loadInput(__DIR__ . '/' . $argv[1]);
+$input = loadInput($argv[1]);
 
 // how many bits the binary words in the input are long
-$binWordSize = strlen(trim($input[0]));
+$binWordSize = strlen(trim($input[1]));
 
 $cnt = 0;
 $bits = array_fill(0, $binWordSize, 0);
