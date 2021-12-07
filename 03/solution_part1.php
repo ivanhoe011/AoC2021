@@ -21,7 +21,6 @@ $cnt = 0;
 $bits = array_fill(0, $binWordSize, 0);
 
 foreach ($input as $bin) {
-
     // count 1s in the input
     for ($i = 0; $i < $binWordSize; $i++) {
         if ($bin[$i] === '1') {
