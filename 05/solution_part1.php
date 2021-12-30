@@ -1,6 +1,6 @@
 <?php
 
-// https://adventofcode.com/2021/day/4
+// https://adventofcode.com/2021/day/5
 
 require __DIR__ . '/../utils.inc.php';
 
